@@ -141,7 +141,7 @@ button {
 .certificates{
   text-align: center;
   width: 120px;
-  margin: 20px 0 0 490px;
+  margin: 20px auto;
 }
 
 .btn {
