@@ -216,6 +216,16 @@ button {
   display: flex;
   align-items: center;
 }
+.links{
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .linkss {
+    text-align: center;
+     margin:auto;
+  }
+}
 
 .header {
   height: 8em;

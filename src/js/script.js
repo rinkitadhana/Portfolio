@@ -61,3 +61,16 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+
+var colors = ["tomato", "brown", "chartreuse", "chocolate", "cyan", "crimson", "salmon", "green", "gray", "turquoise", "violet", "pink", "fuchsia", "gold", "khaki", "lavender", "coral", "deepskyblue"];
+var index = 0;
+
+function changeColor() {
+	var randomIndex = Math.floor(Math.random() * colors.length);
+	var color = colors[randomIndex];
+	document.getElementById("colorChange").style.color = color;
+}
+setInterval(function() {
+	changeColor();
+}, 1000);      
