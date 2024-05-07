@@ -7,7 +7,6 @@ const addThemeClass = (bodyClass, btnClass) => {
   body.classList.add(bodyClass)
   btnTheme.classList.add(btnClass)
 }
-
 const getBodyTheme = localStorage.getItem('portfolio-theme')
 const getBtnTheme = localStorage.getItem('portfolio-btn-theme')
 
@@ -73,4 +72,6 @@ function changeColor() {
 }
 setInterval(function() {
 	changeColor();
-}, 1000);      
+}, 1000);  
+
+
