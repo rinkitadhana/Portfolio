@@ -1,16 +1,317 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <title>Rinkit Adhana</title>
   </head>
-  <body >
-    <div id="root" ></div> 
-    <script type="module" src="/src/main.jsx"></script>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="index.html" class="link"
+          >RA.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name" id="colorChange">Rinkit Adhana.</span></h1>
+        <h2 class="about__role">A Full Stack Engineer.</h2>
+        <p class="about__desc">
+          Hi there! I'm Rinkit Adhana, a second-year student at Maharaja Agrasen Institute of Technology. I'm all about full-stack development, especially with MERN. I'm also into Data Structure AND Algorithms(DSA) and software development. Take a look around my portfolio and see the projects I have been working on!        </p>
+     <div class="linkss">
+        <div class="about__contact center ">
+          <a href="#">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a  target="_blank"
+            href="https://github.com/rinkitadhana"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a target="_blank"
+            href="https://www.linkedin.com/in/rinkitadhana/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>CleanUp Connect</h3>
+            <p class="project__description">
+              Xylem India Hackathon fosters innovative solutions, tackling microplastic pollution in water bodies through research-driven approaches and collaborative efforts.            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">Python</li>
+            </ul>
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/Xylem"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="https://xylemcleanup.netlify.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Snake Game</h3>
+            <p class="project__description">
+              Crafted a JavaFX Snake game, boasting intuitive controls, vibrant graphics, and immersive gameplay, ensuring users' ultimate enjoyment, engagement, and satisfaction. 
+           <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">JavaFx</li>
+            </ul>
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/SnakeByJava"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="https://github.com/rinkitadhana/SnakeByJava/blob/master/README.md"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>LyteRate</h3>
+            <p class="project__description">
+              LyteRate: e-learning hub offering diverse courses from programming to life skills. Features student community, integrated Doubt space, tests, and ChatBot Dharampal.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+            </ul>
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/LyteRate"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="https://lyterate.netlify.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Stopwatch</h3>
+            <p class="project__description">
+              Explore my JavaFX Stopwatch project: a sleek, efficient time-tracking tool. Built with JavaFX for versatility, it showcases my skills in Java development.            <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">JavaFX</li>
+            </ul>
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/StopWatchByJava"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="https://github.com/rinkitadhana/StopWatchByJava"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>CamSoft</h3>
+            <p class="project__description">
+              CamSoft: Transforming Home Security. Experience our innovative e-surveillance platform, featuring AI-integrated cameras for unmatched protection and peace of mind.            <ul class="project__stack">
+              <li class="project__stack-item">Yolo nas</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">Js</li>
+              <li class="project__stack-item">Python</li>
+
+            </ul>
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/CAMsoft"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="#"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>EnviroPlus</h3>
+            <p class="project__description">
+              EnviroPlus: Redefining Sustainability. Our project converts plastic waste into recycled products, fostering environmental stewardship and circular economy principles. 
+              <ul class="project__stack">
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">CSS</li>
+                <li class="project__stack-item">Js</li>
+              </ul>
+  
+
+            <a target="_blank"
+              href="https://github.com/rinkitadhana/EnviroPlus"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <!-- <a target="_blank"
+              href="https://enviroplus.netlify.app/"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills " id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">jQuerry</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">Tailwind</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Node Js</li>
+          <li class="skills__list-item btn btn--plain">Express Js</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">JavaFX</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">GitHub</li>
+          <li class="skills__list-item btn btn--plain">Gitlabs</li>
+          <li class="skills__list-item btn btn--plain">Postman</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Figma</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">VS code</li>
+          <li class="skills__list-item btn btn--plain">Eclipse</li>
+          <li class="skills__list-item btn btn--plain">IntelliJ Idea</li>
+        </ul>
+        <div class="certificates">
+          <a href="#">
+          <span class="btn btn--outline  ">certificates</span>
+        </a>
+      </div>
+        
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:therinkit@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a target="_blank"
+        href="https://github.com/rinkitadhana"
+        class="link footer__link"
+      >
+        Created By Rinkit Adhana
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="/src/js/script.js"></script>
   </body>
 </html>
